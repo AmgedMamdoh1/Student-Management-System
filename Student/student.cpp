@@ -1,49 +1,31 @@
+#include"student.h"
 #include<iostream>
-using namespace std;
-class Student
+//constructor
+Student::Student() : name(""), gpa(0.0), ID(0){}
+//name function
+void Student::set_name(std::string n)
 {
-    private:
-    string name;
-    int ID;
-    float gpa;
-    public:
-    Student()
-    {
-        name = "";
-        ID = 0;
-        gpa = 0.0;
-    }
-    // name
-    void set_name(string n)
-    {
-        name = n;
-    }
-    string get_name()
-    {
-        return name;
-    }
-    // gpa
-    void set_gpa(float g)
-    {
-        gpa = g;
-    }
-    float get_gpa()
-    {
-        return gpa;
-    }
-    //ID
-    void set_id(int id)
-    {
-        ID = id;
-    }
-    int get_id()
-    {
-        return ID;
-    }
-    void display()
-    {
-        cout<<"Name : "<<name<<endl;
-        cout<<"GPA : "<<gpa<<endl;
-        cout<<"ID : "<<ID<<endl;
-    }
-};
+    name = n;
+}
+std::string Student::get_name()
+{
+    return name;
+}
+//GPA function
+void Student::set_gpa(float g)
+{
+    gpa = g;
+}
+float Student::get_gpa()
+{
+    return gpa;
+}
+//ID function
+void Student::set_id(int id)
+{
+    ID = id;
+}
+int Student::get_id()
+{
+    return ID;
+}
