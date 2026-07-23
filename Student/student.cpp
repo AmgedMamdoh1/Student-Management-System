@@ -1,7 +1,11 @@
 #include"student.h"
 #include<iostream>
 //constructor
-Student::Student() : name(""), gpa(0.0), ID(0){}
+Student::Student()
+{
+    name = "";
+    gpa = 0.0;
+}
 //name function
 void Student::set_name(std::string n)
 {

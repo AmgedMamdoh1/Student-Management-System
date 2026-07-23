@@ -1,3 +1,5 @@
+#ifndef student_h
+#define student_h
 #include<iostream>
 class Student
 {
@@ -18,3 +20,4 @@ class Student
     int get_id();
     
 };
+#endif
