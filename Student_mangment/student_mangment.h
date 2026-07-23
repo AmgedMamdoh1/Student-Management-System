@@ -1,5 +1,5 @@
 #include <string>
-#include "student.h"
+#include "../Student/student.h"
 #ifndef student_mangment_h
 #define student_mangment_h
 
@@ -11,4 +11,6 @@ extern Student arr_student[Max_Student];
 void Add_student(std::string name, float gpa);
 //view function
 void view_student();
+//search function
+void search_student();
 #endif

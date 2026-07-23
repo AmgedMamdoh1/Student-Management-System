@@ -1,5 +1,5 @@
-#include"student.h"
-#include<iostream>
+#include "student.h"
+#include <iostream>
 //constructor
 Student::Student()
 {
