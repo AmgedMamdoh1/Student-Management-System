@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include "student_mangment.h"
 
 int student_counter = 0;
@@ -19,5 +20,17 @@ void Add_student(std::string name, float gpa)
     else
     {
         std::cout << "memory is full" << std::endl;
+    }
+}
+// view function that list all information
+void view_student()
+{
+    for (int i = 0; i < student_counter; i++)
+    {
+    std::cout << std::left
+    << std::setw(10) << arr_student[i].get_id()
+    << std::setw(25) << arr_student[i].get_name()
+    << std::setw(10) << arr_student[i].get_gpa()
+    << std::endl;
     }
 }
