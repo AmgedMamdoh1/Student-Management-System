@@ -2,7 +2,8 @@
 #include "../Student/student.h"
 #ifndef student_mangment_h
 #define student_mangment_h
-
+extern int student_counter;
+extern int student_ID;
 //Add_Student requirement
 const int Max_Student = 100;
 extern Student arr_student[Max_Student];
