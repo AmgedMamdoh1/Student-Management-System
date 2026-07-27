@@ -8,10 +8,8 @@
             "args": [
                 "-g",
                 "main.cpp",
-                "File/file.cpp",
                 "Student/student.cpp",
-                "Student_mangment/student_mangment.cpp",
-                "UI/ui.cpp",
+                "Student_mangment/student_mangment.cpp",                
                 "-o",
                 "StudentManagementSystem.exe"
             ],

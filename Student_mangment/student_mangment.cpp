@@ -14,6 +14,7 @@ void Add_student(std::string name, float gpa)
         arr_student[student_counter].set_name(name);
         arr_student[student_counter].set_gpa(gpa);
         arr_student[student_counter].set_id(student_ID);
+        std::cout << "Student Add Sucsaesfly" << std::endl;
         student_counter++;
         student_ID++;
     }
@@ -66,7 +67,8 @@ void search_student()
         }
         else
         {
-            std::cout << "Not found" << std::endl;
+            std::cout << "Not found " << std::endl;
+            break;
         }
         
     }
